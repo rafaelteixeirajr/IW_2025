@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    /* Define a fonte padrão */
+    background: #0b1020;
+    /* Cor de fundo da página */
+    color: #eee;
+    /* Cor padrão do texto */
+    line-height: 1.6;
+    /* Altura das linhas para melhorar legibilidade */
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #111a;
+    border-bottom: 1px solid #23315d;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0;
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav .menu a {
+    color: #eee;
+    text-decoration: none;
+    padding: 0.4rem 0.7rem;
+    border-radius: 20px;
+    margin-left: 0.5px;
+}
+
+nav .menu a:hover{
+    background: #222;
+}
+
+section {
+    padding: 3rem 0;
+    scroll-margin-top: 4rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card {
+    background: #111833;
+    border: 1px solid #23315d;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.btn {
+    border: 1px solid #23315d;
+    background: #1a2340;
+    color: #eee;
+    padding: 0.5rem 0.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #222;
+}
+
+.primary {
+    background: #153a7a;
+    color: #fff;
+}
+
+.map iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+footer{
+    padding: 2rem 0;
+    text-align: center;
+    color: #bbb;
+    border-top: 1px solid #23315d;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 999px;
+    background: #111833;
+    border: 1px solid #23315d;
+    color: #eee;
+    text-decoration: none;
+}
