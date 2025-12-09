@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corinthians meu Amor</title>
+    <style>
+        .logo {
+            display: block;
+            margin: 20px auto 20px 0;
+            height: auto;
+            width: 75px;
+            text-align: left;
+
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .card {
+        width: 250px;
+        height: 150px;
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        transition: all 0.25s ease;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin-top: 15px;
+        display: flex;
+        gap: 12px; 
+        align-items: center; 
+        padding: 12px; 
+        border: 1px solid #ddd; 
+        border-radius: 8px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);       
+            box-shadow: 0 15px 25px rgb(0, 0, 0); 
+        }
+
+        .card-icon { width: 48px; height: 48px; object-fit: cover; flex: 0 0 48px; }
+
+        .avatar {
+            width: 140px;               /* tamanho do avatar */
+            height: 140px;
+            border-radius: 50%;         /* torna circular */
+            overflow: hidden;
+            display: inline-block;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            margin: 10px;
+            transition: 0.3s;
+
+        }
+
+        .avatar:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;          /* mantém proporção e corta o excesso */
+            object-position: 50% 30%;   /* ajuste aqui para focar o rosto (X% Y%) */
+            display: block;
+        }
+
+        .nome {
+            text-align: center;
+            font-weight: bold;
+            margin-top: -25px;
+            color: #000000;
+        }
+
+        body {
+        background: repeating-linear-gradient(
+            to right,         
+            black 0,
+            black 35px,      
+            white 35px,
+            white 40px        
+        );
+        }
+
+        .caixa{
+            background-color: white;
+            margin: 45px auto;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 1200px;
+        }
+
+        header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+        background-color: #414141;
+        height: 70px;      
+        position: fixed; 
+        top: 0;          
+        left: 0;        
+        width: 100%;     
+        z-index: 1000;
+        }
+
+        h1, h2, h3 {
+            text-align: center; 
+            font-family: 'Montserrat', sans-serif;
+
+
+        }
+
+        .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+
+        .txt {
+            text-align: justify;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 500px;
+        }
+
+        .cards-container {
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+            gap:20px;
+            padding:20px;
+        }
+
+        img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        
+        }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagens/logo-corinthians-4096.png" alt="logo corinthians">
+
+        <nav class="topicos">
+            <a href="#historia">História</a>
+            <a href="#torcida">Torcida</a>
+            <a href="#titulos">Títulos</a>
+            <a href="#idolos">Idolos</a>
+            <a href="#elenco">Elenco</a>
+            <a href="#uniforme">Uniforme</a>
+        </nav>
+    </header>
+
+    <div class="caixa">
+
+        <h1 id="historia">História do time do Povo</h1>
+
+        <p>O SCCP ou Sport Clube Corinthians Paulista nasceu em <b>1º de setembro de 1910</b>, no bairro do <b>Bom Retiro</b>, em São Paulo. 
+        Foi fundado por um grupo de cinco operários: <b>Anselmo Corrêa, Antônio Pereira, Carlos Silva, Joaquim Ambrósio e Raphael Perrone</b>, inspirados pela passagem do time inglês Corinthian Football
+        Club. O clube nasceu com a missão de ser o <b>"Time do Povo"</b>, rompendo com o elitismo do futebol paulista 
+        da época.</p>
+
+        <img src="imagens/corinthians-homenageou-os-fundadores-do-clube-no-4l941w.jpg" alt="Fundadores do Corinthians" style="display: block; margin: 20px auto; max-width: 500px; height: auto;" >
+
+        <h2>Primeiro título</h2>
+
+        <p>O primeiro título Foi em 8 de novembro de 1914 com um sonoro 4 a 0 para cima do Campos Elyseos, no Parque Antárctica Assim se destacando em ambito regional</p>
+
+        <h2>Seca de titulos e lealdade</h2>
+
+        <p class="txt">De 1954 à 1977 o corinthians sofreu sobre o seu pior jejum de títulos de sua história.
+            Foram 23 anos sem conquistar nenhum título oficial acumulando pelo caminhos alguns vices-campeonatos e decepções, o que fez com que a torcida permanecesse <b>fiel</b> ao clube, 
+            mesmo diante das dificuldades. Esse período ficou conhecido como a "Era do Jejum", mas também destacou a paixão e lealdade dos torcedores corinthianos.
+            A quebra desse jejum veio em 13 de novembro de 1977, quando o Corinthians venceu a Ponte Preta por 1 a 0, com um gol Histórico de <b>Basílio</b>, conquistando o Campeonato Paulista.</p>
+
+        <img src="imagens/basilio.jpeg" alt="foto de basilio" style="display: block; margin: 20px auto; max-width: 500px; height: auto; float: right; position: relative; top: -250px; right: 125px; height: auto; width: 300px;">
+
+        <h3>A Fiel Torcida</h3>
+
+        <p class="txt">A <b>"Fiel Torcida"</b> nasceu justamente durante o período mais desafiador da história do clube.
+        Durante o jejum de títulos, a torcida corinthiana se consolidou
+            como uma das mais apaixonadas e leais do futebol brasileiro. Mesmo enfrentando décadas sem conquistas
+            oficiais, os torcedores permaneceram ao lado do time, lotando os estádios e apoiando incondicionalmente.
+            Essa devoção inquestionável, mantida nos momentos de maior dificuldade, deu origem ao nome "Fiel" – aqueles
+            que mantêm a fidelidade acima de qualquer resultado. A "Fiel Torcida" tornou-se símbolo de resistência e amor 
+            verdadeiro pelo Corinthians, provando que ser corinthiano significa muito mais do que apenas torcer nos momentos de glória.</p>
+
+        <img src="imagens/japão.jpg" alt="aeroporto japão" style="display: block; margin: 20px auto; max-width: 500px; height: auto; float: right; position: relative; top: -275px; right: 125px; height: auto; width: 350px;">
+
+        <h3>Invasão corinthiana de 1976</h3>
+
+        <p class="txt">A Invasão Corinthiana ocorreu em 5 de dezembro de 1976, na semifinal do Brasileirão contra o Fluminense, no Maracanã.
+            Cerca de 70 mil corintianos viajaram para o Rio de Janeiro, transformando o Maracanã em um estádio de São Paulo. O time venceu nos pênaltis, garantindo a vaga na final.
+            Este ato de fé, no auge do jejum de 22 anos, consolidou a torcida como a Fiel e provou que o amor pelo clube era incondicional, fornecendo a energia necessária para a quebra
+            do jejum em 1977.</p>
+
+            <img src="imagens/invasão.jpeg" alt="Invasão corinthiana" style="display: block; margin: 20px auto; max-width: 500px; height: auto; float: right; position: relative; top: -250px; right: 125px; height: auto; width: 300px;">
+
+        <h2>Democracia Corinthiana 1982-1985</h2>
+
+        <p class="txt">A Democracia Corinthiana foi um movimento inovador no futebol brasileiro, liderado por jogadores como Sócrates, Wladimir e Casagrande, entre 1982 e 1985.
+            Durante esse período, o Corinthians adotou uma gestão democrática, onde jogadores, comissão técnica e diretoria tomavam decisões coletivamente.
+            Esse modelo desafiou as estruturas tradicionais do futebol, promovendo a participação ativa dos atletas em questões administrativas e sociais.
+            A Democracia Corinthiana não só trouxe sucesso esportivo ao clube, com títulos como o Campeonato Paulista de 1982 e 1983,
+            mas também teve um impacto significativo na sociedade brasileira, inspirando debates sobre democracia e direitos civis durante a ditadura militar.</p>
+
+        <img src="imagens/democracia.jpeg" alt="democracia corinthiana" style="display: block; margin: 20px auto; max-width: 500px; height: auto;  float: right; position: relative; top: -288px; right: 125px; height: auto; width: 350px;" >
+
+        <h2>Primeiro titulo Naciona 1990</h2>
+
+        <p class="txt">O primeiro título nacional do corinthians veio em 16/12/1990 contra o São Paulo dentro do Morumbi com gol de Tupãnzinho
+            com a liderança de Craque Neto levou o time até o título assim mosttrando sua força em âmbito nacional.
+            Foi um marco importante na história do clube, consolidando sua posição como uma potência do futebol brasileiro.
+        </p>
+
+        <img src="imagens/1990.jpeg" alt="titulo nacional 1990" style="display: block; margin: 20px auto; max-width: 500px; height: auto;  float: right; position: relative; top: -185px; right: -197px; height: auto; width: 300px;">
+        
+        <br> <br>
+        <h2>Mundial 2000</h2>
+
+        <p class="txt">Em 2000 a FIFA convidou o Corinthians para jogar o primeiro Mundial de clubes organizada pela própria FIFA.
+            na fase de grupos o Corinthians enfrentou o Real Madrid, Al Nassr e Raja Casablanca se classificando em primeiro lugar, no jogo contra o Real Madrid  o Corinthians empatou em  2 a 2;
+            na Final o Corinthians enfrentou o Vasco da Gama em uma partida emocionante que terminou empatada em 0 a 0 no tempo normal e na prorrogação.
+            Nos pênaltis o Corinthians venceu por 4 a 3 conquistando assim seu primeiro título mundial com seu capitão Fred Rincón levantando a taça.
+        </p>
+        <br>
+
+        <img src="imagens/mundial_de_clubes_da_fifa_2000.jpg" alt="mundial 2000" style="display: block; margin: 20px auto; max-width: 500px; height: auto;  float: right; position: relative; top: -250px; right: 125px; height: auto; width: 300px;" >
+
+        <h2>Primeiro rebaixamento 2007</h2>
+
+        <p class="txt">Em 2007 o Corinthians viveu um dos momentos mais difíceis de sua história ao ser rebaixado para a Série B do Campeonato Brasileiro pela primeira vez.
+            A campanha ruim ao longo da temporada, marcada por derrotas e empates, culminou no rebaixamento após uma derrota para o Grêmio na última rodada.
+            Esse episódio chocou a torcida e a imprensa, levando a uma profunda reflexão sobre a gestão do clube e a necessidade de mudanças.
+            No entanto, o Corinthians mostrou resiliência e determinação, conseguindo retornar à Série A no ano seguinte, em 2008, após uma campanha sólida na Série B.
+
+            <img src="imagens/2007.webp" alt="rebaixamento 2007" style="display: block; margin: 20px auto; max-width: 500px; height: auto;  float: right; position: relative; top: -250px; right: -565px; height: auto; width: 450px;" >
+
+        
+        <h2>Primeira Libertadores 2012</h2>
+
+        <p class="txt">Em 2012, o Corinthians conquistou sua primeira Copa Libertadores da América, um marco histórico para o clube.
+            Sob o comando do técnico Tite, o time apresentou uma campanha sólida e consistente ao longo do torneio.
+            Na final, o Corinthians enfrentou o Boca Juniors, da Argentina, e venceu ambas as partidas (1 a 1 na Bombonera e 2 a 0 no Pacaembu),
+            garantindo o título inédito. A conquista da Libertadores não só elevou o status do Corinthians no cenário continental,
+            mas também fortaleceu a paixão de sua torcida, consolidando o clube como uma potência do futebol sul-americano.</p>
+
+        <img src="imagens/liberta-2012.jpg" alt="liberta-2012" style="display: block; margin: 20px auto; max-width: 500px; height: auto;  float: right; position: relative; top: -250px; right: 125px; height: auto; width: 300px;">
+
+        <h2>Mundial de Clubes da FIFA 2012</h2>
+
+        <p class="txt">Em 2012, o Corinthians conquistou o Mundial de Clubes da FIFA, reafirmando sua posição como uma potência global no futebol.
+            Após vencer a Copa Libertadores, o time paulista enfrentou o Chelsea, campeão europeu, na final do torneio realizado no Japão.
+            Em uma partida tensa e equilibrada, o Corinthians saiu vitorioso com um gol de Paolo Guerrero, garantindo o título mundial.
+            Essa conquista não só elevou o prestígio do clube internacionalmente, mas também fortaleceu ainda mais a paixão e orgulho da torcida corinthiana,
+            consolidando o ano de 2012 como um dos mais memoráveis na história do clube.</p>
+
+        <img src="imagens/mundial-2012.avif" alt="mundial-2012" style="display: block; margin: 20px auto; max-width: 500px; height: auto;  float: right; position: relative; top: -250px; right: 125px; height: auto; width: 300px;">
+
+        <h2>Má gestão e divida</h2>
+
+        <p class="txt">Nos últimos anos, o Corinthians enfrentou desafios significativos relacionados à má gestão financeira e administrativa.
+            Decisões questionáveis por parte da diretoria levaram a um aumento substancial das dívidas do clube,
+            afetando sua capacidade de investir em jogadores e infraestrutura. A falta de transparência e planejamento estratégico resultou em dificuldades operacionais,
+            prejudicando o desempenho esportivo e a confiança dos torcedores agora em novembro de 2025 a divida chega a 2.7 bilhões de reais.</p>
+
+            <img src="imagens/divida.jpg" alt="divida corinthians" style="display: block; margin: 20px auto; max-width: 500px; height: auto;  float: right; position: relative; top: -250px; right: 125px; height: auto; width: 300px;" >
+        <br>
+
+        <h1 id="torcida">Torcida</h1>
+
+        <p class="txt">A torcida do Corinthians, chamada de Fiel, é uma das maiores e mais apaixonadas do Brasil, com cerca de 30 a 35 milhões de torcedores 
+            espalhados pelo mundo. Conhecida pelo apoio incondicional como “12º jogador”, a torcida se destaca por cânticos tradicionais como 
+            “Eu nunca vou te abandonar!”, “Aqui tem um bando de loucos!” e “Todo Poderoso Timão!”. As principais torcidas organizadas, como Gaviões da Fiel, 
+            Camisa 12 e Estopim da Fiel, são responsáveis pela festa nas arquibancadas, com bandeirões, bateria e coreografias.
+        </p>
+
+
+        <video width="600" controls style="display: block; margin: 20px auto; max-width: 500px; height: auto;  float: right; position: relative; top: -235px; right: 125px; height: auto; width: 390px;">
+            <source src="imagens/hino.mp4" type="video/mp4" >
+        </video>
+
+        <br><br><br>
+
+        <h1 id="titulos">Títulos</h1>
+        <p>Ao longo de sua história o Corinthians foi multicampeão.</p>
+
+            
+            <div class="card">
+                <img src="imagens/taca-paulista-2.png" alt="Ícone" class="card-icon">
+                <div class="card-body">
+                    <h3><b>Campeonato Paulista: 30 títulos (recorde)</b></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagens/brasileirao2.jpg" alt="Ícone" class="card-icon">
+                <div class="card-body">
+                    <h3><b>Campeonato Brasileiro: 7 títulos</b></h3>
+                </div>
+            </div>
+
+                <div class="card">
+                    <img src="imagens/taca copa do brasil.jpg" alt="Ícone" class="card-icon">
+                    <div class="card-body">
+                        <h3><b>Copa do Brasil: 3 títulos</b></h3>
+                    </div>
+            </div>
+
+            <div class="card">
+                <img src="imagens/taça libertadores2.png" alt="Ícone" class="card-icon">
+                <div class="card-body">
+                    <h3><b>Copa Libertadores da América: 1 título</b></h3>
+                    </div>
+            </div>
+
+
+
+            <div class="card">
+                <img src="imagens/recopa suda.png" alt="Ícone" class="card-icon">
+                <div class="card-body">
+                    <h3><b>Recopa Suda-Americana: 1 título</b></h3>
+                    </div>
+            </div>
+
+            <div class="card">
+                <img src="imagens/recopa liberta.jpeg" alt="Ícone" class="card-icon">
+                <div class="card-body">
+                    <h3><b>Supercopa Libertadores: 1 título</b></h3>
+                    </div>
+            </div>
+
+            <div class="card">
+                <img src="imagens/super copa brasil.webp" alt="Ícone" class="card-icon">
+                <div class="card-body">
+                    <h3><b>Super Copa do Brasil: 1 título</b></h3>
+                    </div>
+            </div>
+
+            <div class="card">
+                <img src="imagens/mundial 2000.webp" alt="Ícone" class="card-icon">
+                <img src="imagens/mundial 2012.jpg" alt="Ícone" class="card-icon">
+                <div class="card-body">
+                    <h3><b>Mundial de Clubes da FIFA: 2 títulos</b></h3>
+                </div>
+            </div>
+
+        <h1 id="idolos">Ídolos</h1>
+
+        <p>Ao longo de sua história, o Corinthians teve inúmeros ídolos que deixaram uma marca indelével no clube e na memória dos torcedores. Alguns dos mais notáveis incluem:</p>
+
+
+        <div class="avatar"><img src="imagens/idolos/alessandro.jpg" alt=""><p class="nome">Alessandro</p></div>
+        <div class="avatar"><img src="imagens/idolos/casagrande.jpg" alt=""><p class="nome">Casagrande</p></div>
+        <div class="avatar"><img src="imagens/idolos/socrates.jpg" alt=""><p class="nome">Socrates</p></div>
+        <div class="avatar"><img src="imagens/idolos/ralf.jpg" alt=""><p class="nome" style="color: white;">Ralf</p></div>
+        <div class="avatar"><img src="imagens/idolos/ricardinho.jpeg" alt=""><p class="nome">Ricardinho</p></div>
+        <div class="avatar"><img src="imagens/idolos/ronaldo_fenomeno.jpg" alt=""><p class="nome">Ronaldo</p></div>
+        <div class="avatar"><img src="imagens/idolos/tevez.png" alt=""><p class="nome">Tevez</p></div>
+        <div class="avatar"><img src="imagens/idolos/wladimir.jpg" alt=""><p class="nome">Wladimir</p></div>
+        <div class="avatar"><img src="imagens/idolos/baltazar.jpg" alt=""><p class="nome">Baltazar</p></div>
+        <div class="avatar"><img src="imagens/idolos/cassio.jpeg" alt=""><p class="nome">Cássio</p></div>
+        <div class="avatar"><img src="imagens/idolos/basilio.jpg" alt=""><p class="nome">Basílio</p></div>
+        <div class="avatar"><img src="imagens/idolos/biro-biro.jpg" alt=""><p class="nome">Biro-Biro</p></div>
+        <div class="avatar"><img src="imagens/idolos/chicao.jpg" alt=""><p class="nome">Chicão</p></div>
+        <div class="avatar"><img src="imagens/idolos/neto.jpg" alt=""><p class="nome">Craque Neto</p></div>
+        <div class="avatar"><img src="imagens/idolos/danilo.jpg" alt=""><p class="nome"  style="color: white;">Danilo</p></div>
+        <div class="avatar"><img src="imagens/idolos/dida.jpg" alt=""><p class="nome" style="color: white;">Dida</p></div>
+        <div class="avatar"><img src="imagens/idolos/dinei.jpg" alt=""><p class="nome"  style="color: white;">Dinei</p></div>
+        <div class="avatar"><img src="imagens/idolos/edilson.jpg" alt=""><p class="nome">Edilson</p></div>
+        <div class="avatar"><img src="imagens/idolos/romero.webp" alt=""><p class="nome"  style="color: white;">Romero</p></div>
+            <div class="avatar"><img src="imagens/idolos/marcelinho_carioca.jpg" alt=""><p class="nome">Marcelinho </p></div>
+            <div class="avatar"><img src="imagens/idolos/paologuerrero-corinthians-rib.webp" alt=""><p class="nome">Paolo Guerrero</p></div>
+            <div class="avatar"><img src="imagens/idolos/rivelino.jpg" alt=""><p class="nome">Rivelino</p></div>
+                <div class="avatar"><img src="imagens/idolos/ze_maria.jpg" alt=""><p class="nome">Zé Maria</p></div>
+                <div class="avatar"><img src="imagens/idolos/ronaldo_giovanelli.jpg" alt=""><p class="nome">Ronaldão</p></div>
+                <div class="avatar"><img src="imagens/idolos/tite.jpg" alt=""><p class="nome" style="color: white;">Tite</p></div>
+                <div class="avatar"><img src="imagens/idolos/renato-augusto.jpg" alt=""><p class="nome">Renato Augusto</p></div>
+                <div class="avatar"><img src="imagens/idolos/vampeta.jpg" alt=""><p class="nome">Vampeta</p></div>
+                <div class="avatar"><img src="imagens/idolos/emerson_sheik.jpg" alt=""><p class="nome">Sheik</p></div>
+        <div class="avatar"><img src="imagens/idolos/gamarra.jpg" alt=""><p class="nome">Gamarra</p></div>
+        <div class="avatar"><img src="imagens/idolos/oswaldo_brandao.jpg" alt=""><p class="nome" style="color: white;">Oswaldo</p></div>
+        <div class="avatar"><img src="imagens/rincon.jpeg" alt=""><p class="nome" style="color: white;">Rincón</p></div>
+
+        <h1 id="uniforme">Uniforme Atual</h1>
+
+        <img src="imagens/uniforme.jpg" alt="uniforme corinthians" style="display: block; margin: 20px auto; max-width: 500px; height: auto;">
+  
+
+        <h1 id="elenco">Elenco Atual</h1>
+
+        <p>O elenco titular do corinthians conta com os seguintes atletas:</p>
+
+        <div class="avatar"><img src="imagens/elenco/574901-1758160198.webp" alt=""><p class="nome" style="color: white;">Hugo</p></div>
+        <div class="avatar"><img src="imagens/elenco/matheuzinho.jpeg" alt=""><p class="nome">matheuzinho</p></div>
+        <div class="avatar"><img src="imagens/elenco/gustavo.jpeg"><p class="nome">Gustavo</p></div>
+        <div class="avatar"><img src="imagens/elenco/andre.jpeg" alt=""><p class="nome">Ramalho</p></div>
+        <div class="avatar"><img src="imagens/elenco/matheus_bidu_foi_o_autor_do_gol_do_corinthians_szp1.jpg"><p class="nome" style="color: white;">Bidu</p></div>
+        <div class="avatar"><img src="imagens/elenco/raniele.webp" ><p class="nome" style="color: white;">Raniele</p></div>
+        <div class="avatar"><img src="imagens/elenco/carrilio.jpeg" alt=""><p class="nome" style="color: white;">Carrilio</p></div>
+        <div class="avatar"><img src="imagens/elenco/breno.jpg" alt=""><p class="nome">Bidon</p></div>
+        <div class="avatar"><img src="imagens/elenco/garro.jpeg" alt=""><p class="nome" style="color: white;">Garro</p></div>
+        <div class="avatar"><img src="imagens/elenco/yuri.webp" alt=""><p class="nome">Yuri </p></div>
+        <div class="avatar"><img src="imagens/elenco/depay.jpeg" alt=""><p class="nome">Memphis</p></div>
+      </div>  
+        
+
+    <footer>
+        <p>©2025 Corinthians meu Amor. Todos os direitos reservados.</p>
+
+
+    </footer>
+</body>
+</html>
